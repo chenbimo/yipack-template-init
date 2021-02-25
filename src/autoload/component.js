@@ -7,7 +7,7 @@
  * 如有问题或建议，请联系作者：chensuiyi.com
  */
 import Vue from 'vue';
-let importAll = require.context('@src/comps', true, /\.vue$/);
+let importAll = require.context('@src/components', true, /\.vue$/);
 importAll.keys().map((path) => {
     let component = importAll(path).default || importAll(path);
     Vue.component(component.name, component);
