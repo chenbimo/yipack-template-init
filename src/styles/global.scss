@@ -1,24 +1,28 @@
 body {
     overflow-x: hidden;
-    font-family: 'lucida Grande', Verdana, 'Microsoft YaHei';
     -webkit-font-smoothing: subpixel-antialiased;
 }
+
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .bg-contain,
 .bg-cover {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .bg-contain {
     background-size: contain;
 }
+
 .bg-cover {
     background-size: cover;
 }
+
 .icon {
     width: 1em;
     height: 1em;

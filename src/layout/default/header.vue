@@ -10,7 +10,7 @@
 
 <script>
 export default {
-    name: "LayoutHeader",
+    name: 'LayoutHeader'
 };
 </script>
 

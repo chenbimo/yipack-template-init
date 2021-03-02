@@ -1,7 +1,8 @@
 <template>
     <div class="page-index">
         ddd22334455666777ddd222
-        <div class="div-1" @click="goNewsSvNews1">去首页的二级路由页面index-1</div>
+        <div></div>
+        <div v-if="abc === 1" class="div-1" @click="goNewsSvNews1">去首页的二级路由页面index-1</div>
         <div @click="goNewsSpNews1">去首页的二级路由页面index-2</div>
         {{ abc | F1 }}
         <C1></C1>
@@ -57,6 +58,7 @@ export default {
 // 组件作用域方案
 // 所有样式不会影响组件和框架
 .page-index {
-    color: #000;
+    color: #000777;
+    font-size: 10rpx;
 }
 </style>
