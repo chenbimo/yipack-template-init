@@ -9,7 +9,7 @@ import Vue from 'vue';
 // 全局路由
 import router from '@src/router/index.js';
 // 全局存储
-         import vuex from '@src/vuex/index.js';
+    import vuex from '@src/vuex/index.js';
 // 国际化
 import i18n from '@src/lang/index.js';
 // 插件导入
