@@ -16,13 +16,20 @@ let apis = {};
 let importAll = require.context('@src/apis', true, /\.js$/);
 importAll.keys().map((path) => {
     let data = importAll(path).default || importAll(path);
-    apis['global.' + path.replace('./', '').replace('.js', '').replace('/', '.')] = data;
+    apis[
+        'global.' + path.replace('./', '').replace('.js', '').replace('/', '.')
+    ] = data;
 });
 
 let importApi = require.context('@src/pages', true, /api\.js$/);
 importApi.keys().map((path) => {
     let data = importApi(path).default || importApi(path);
-    let route = path.replace('./', '').replace('subPages/', 'sp.').replace('subViews/', 'sv.').replace('/api.js', '').replace('/', '.');
+    let route = path
+        .replace('./', '')
+        .replace('subPages/', 'sp.')
+        .replace('subViews/', 'sv.')
+        .replace('/api.js', '')
+        .replace('/', '.');
     apis[route] = data;
 });
 apis = __flatten.unflatten(apis);

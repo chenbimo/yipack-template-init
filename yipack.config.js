@@ -8,10 +8,7 @@ module.exports = {
      */
     px2viewport: {},
     // 全局模块
-    providePlugin: {
-        // __utils:''
-        path: 'path-browserify'
-    },
+    providePlugin: {},
     // 外部模块
     externals: {},
     // 开发配置

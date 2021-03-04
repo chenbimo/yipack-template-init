@@ -51,10 +51,14 @@ const store = new Vuex.Store({
             let keyLast = keyPath[keyLength - 1];
             // 判断动作
             if (params.action) {
-                if (params.action === '-') keySave[keyLast] = keySave[keyLast] - params.data;
-                if (params.action === '+') keySave[keyLast] = keySave[keyLast] + params.data;
-                if (params.action === '*') keySave[keyLast] = keySave[keyLast] * params.data;
-                if (params.action === '/') keySave[keyLast] = keySave[keyLast] / params.data;
+                if (params.action === '-')
+                    keySave[keyLast] = keySave[keyLast] - params.data;
+                if (params.action === '+')
+                    keySave[keyLast] = keySave[keyLast] + params.data;
+                if (params.action === '*')
+                    keySave[keyLast] = keySave[keyLast] * params.data;
+                if (params.action === '/')
+                    keySave[keyLast] = keySave[keyLast] / params.data;
                 return;
             } else {
                 keySave[keyLast] = params.data;
