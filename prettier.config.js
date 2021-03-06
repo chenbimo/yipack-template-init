@@ -8,7 +8,7 @@ module.exports = {
     // 使用单引号
     singleQuote: true,
     // 打印宽度为80
-    printWidth: 80,
+    printWidth: 1024,
     // 使用括号间距
     bracketSpacing: true,
     // 不使用tab
