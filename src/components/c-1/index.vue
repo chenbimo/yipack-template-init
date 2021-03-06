@@ -1,5 +1,5 @@
 <template>
-    <div class="comp-c-1">c-1-{{ ddd }}</div>
+    <div class="comp-c-1">c-1</div>
 </template>
 
 <script>
