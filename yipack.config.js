@@ -1,5 +1,7 @@
 // 插件参数配置，用于控制
 module.exports = {
+    // yipack 版本 [2|3]
+    version: 2,
     // 项目类型 [init|uniapp|mini|admin|api|blog]
     type: 'init',
     /**
