@@ -2,22 +2,10 @@
     <div class="page-index">
         ddd22334455666777ddd222
         <div></div>
-        <div v-if="abc === 1" class="div-1" @click="goNewsSvNews1">
-            去首页的二级路由页面index-1
-        </div>
+        <div v-if="abc === 1" class="div-1" @click="goNewsSvNews1">去首页的二级路由页面index-1</div>
         <div @click="goNewsSpNews1">去首页的二级路由页面index-2</div>
         {{ abc | F1 }}
         <C1></C1>
-        <uploader :options="options" class="uploader-example">
-            <uploader-unsupport></uploader-unsupport>
-            <uploader-drop>
-                <p>Drop files here to upload or</p>
-                <uploader-btn>select files</uploader-btn>
-                <uploader-btn :attrs="attrs">select images</uploader-btn>
-                <uploader-btn :directory="true">select folder</uploader-btn>
-            </uploader-drop>
-            <uploader-list></uploader-list>
-        </uploader>
     </div>
 </template>
 

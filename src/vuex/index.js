@@ -24,7 +24,7 @@ const store = new Vuex.Store({
          * 定义处：
          * 无需定义，级联赋值！！！
          */
-        mutation: (state, params) => {
+        YiMutation: (state, params) => {
             // 判断路径
             if (!params.path) return;
             // 判断数据
@@ -51,14 +51,10 @@ const store = new Vuex.Store({
             let keyLast = keyPath[keyLength - 1];
             // 判断动作
             if (params.action) {
-                if (params.action === '-')
-                    keySave[keyLast] = keySave[keyLast] - params.data;
-                if (params.action === '+')
-                    keySave[keyLast] = keySave[keyLast] + params.data;
-                if (params.action === '*')
-                    keySave[keyLast] = keySave[keyLast] * params.data;
-                if (params.action === '/')
-                    keySave[keyLast] = keySave[keyLast] / params.data;
+                if (params.action === '-') keySave[keyLast] = keySave[keyLast] - params.data;
+                if (params.action === '+') keySave[keyLast] = keySave[keyLast] + params.data;
+                if (params.action === '*') keySave[keyLast] = keySave[keyLast] * params.data;
+                if (params.action === '/') keySave[keyLast] = keySave[keyLast] / params.data;
                 return;
             } else {
                 keySave[keyLast] = params.data;

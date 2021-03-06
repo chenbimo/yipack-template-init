@@ -1,4 +1,4 @@
 import Vue from 'vue';
 Vue.filter('F1', function (value) {
-    return 123;
+    return value + ' 过滤器 F1';
 });

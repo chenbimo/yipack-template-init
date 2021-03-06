@@ -1,37 +1,35 @@
-module.exports = `
 import request from '@src/request/api.js';
 export default {
     // 添加
-    ins(params) {
+    insert(params) {
         return request({
             method: 'post',
-            url: '/ins',
-            params: params
+            url: '/insert',
+            data: params
         });
     },
     // 删除
-    del(params) {
+    delete(params) {
         return request({
             method: 'post',
-            url: '/del',
-            params: params
+            url: '/delete',
+            data: params
         });
     },
     // 更新
-    upd(params) {
+    update(params) {
         return request({
             method: 'post',
-            url: '/upd',
-            params: params
+            url: '/update',
+            data: params
         });
     },
     // 查询
-    sel(params) {
+    select(params) {
         return request({
-            method: 'post',
-            url: '/sel',
+            method: 'get',
+            url: '/select',
             params: params
         });
     }
 };
-`;

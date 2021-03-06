@@ -1,12 +1,18 @@
 <template>
-    <div class="page-p-1">p-1</div>
+    <div class="page-p-1">
+        p-1
+        <yi-c2></yi-c2>
+        {{ name | F1 }}
+    </div>
 </template>
 
 <script>
 export default {
     name: 'P1',
     data() {
-        return {};
+        return {
+            name: 'chensuiyi'
+        };
     },
     created() {
         this.on_init();
