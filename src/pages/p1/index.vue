@@ -1,18 +1,12 @@
 <template>
-    <div class="page-p-1">
-        p-1
-        <yi-c2></yi-c2>
-        {{ name | F1 }}
-    </div>
+    <div class="page-p1">p-1</div>
 </template>
 
 <script>
 export default {
     name: 'P1',
     data() {
-        return {
-            name: 'chensuiyi'
-        };
+        return {};
     },
     created() {
         this.on_init();
@@ -78,6 +72,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-p-1 {
+.page-p1 {
 }
 </style>

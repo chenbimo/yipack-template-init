@@ -1,10 +1,10 @@
 export default {
-    path: '/p-1',
+    path: '/p1',
     component: () => import('@src/layout/default/index.vue'),
     children: [
         {
             path: '/',
-            component: () => import('@src/pages/p-1/index.vue')
+            component: () => import('@src/pages/p1/index.vue')
         }
     ]
 };

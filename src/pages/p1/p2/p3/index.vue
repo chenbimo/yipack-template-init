@@ -1,5 +1,5 @@
 <template>
-    <div class="page-p-3">p-3</div>
+    <div class="page-p3">p-3</div>
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
         // 接口-增加
         api_insert() {
             return new Promise((resolve, reject) => {
-                this.$Apis.p1
+                this.$Apis.p1.p2.p3
                     .insert()
                     .then((res) => {
                         resolve(res);
@@ -31,7 +31,7 @@ export default {
         // 接口-删除
         api_delete() {
             return new Promise((resolve, reject) => {
-                this.$Apis.p1
+                this.$Apis.p1.p2.p3
                     .delete()
                     .then((res) => {
                         resolve(res);
@@ -44,7 +44,7 @@ export default {
         // 接口-修改
         api_update() {
             return new Promise((resolve, reject) => {
-                this.$Apis.p1
+                this.$Apis.p1.p2.p3
                     .update()
                     .then((res) => {
                         resolve(res);
@@ -57,7 +57,7 @@ export default {
         // 接口-查询
         api_select() {
             return new Promise((resolve, reject) => {
-                this.$Apis.p1
+                this.$Apis.p1.p2.p3
                     .select()
                     .then((res) => {
                         resolve(res);
@@ -72,6 +72,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-p-3 {
+.page-p3 {
 }
 </style>
