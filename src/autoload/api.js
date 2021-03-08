@@ -15,7 +15,7 @@ let importAll = require.context('@src/apis', true, /\.js$/);
 importAll.keys().map((path) => {
     let data = importAll(path).default || importAll(path);
     let route =
-        'global.' +
+        'Global.' +
         path
             .replace('./', '')
             .replace('/index.js', '')
