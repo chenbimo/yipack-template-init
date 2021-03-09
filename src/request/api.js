@@ -41,7 +41,8 @@ request.interceptors.request.use(
 // 添加响应拦截器
 request.interceptors.response.use(
     function (res) {
-        return Promise.resolve(res.data);
+        Promise.resolve(res.data);
+        return;
 
         /**
          * 响应拦截，以下仅为示例，请根据项目需求调整。
@@ -50,6 +51,7 @@ request.interceptors.response.use(
         // 令牌验证失败
         // if (res.data.ret === 401) {
         //     location.hash = "#/login";
+        //     return;
         // }
 
         // if (res.data.ret === 500) {
@@ -57,7 +59,8 @@ request.interceptors.response.use(
         //         title: "服务器错误",
         //         desc: res.data.msg,
         //     });
-        //     return Promise.reject(res.data);
+        //     Promise.reject(res.data);
+        //     return;
         // }
 
         // if (res.data.msg) {
@@ -65,10 +68,12 @@ request.interceptors.response.use(
         //         content: res.data.msg,
         //         duration: 5,
         //     });
+        //     return;
         // }
 
         // 其他错误
-        // return Promise.reject(res.data);
+        // Promise.reject(res.data);
+        // return;
     },
     function (error) {
         // 对响应错误做点什么
