@@ -1,5 +1,5 @@
 export default {
-    path: '/index',
+    path: '/',
     component: () => import('@src/layout/default/index.vue'),
     children: [
         {
