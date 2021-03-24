@@ -4,6 +4,7 @@
     "description": "yipack-template-init",
     "main": "index.js",
     "scripts": {
+        "postinstall": "husky install",
         "dev": "yipack dev",
         "build": "yipack build",
         "build:analyzer": "yipack build --analyzer",
