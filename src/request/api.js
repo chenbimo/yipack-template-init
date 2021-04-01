@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import axios from 'axios';
-import basil from '@src/plugins/basil/index.js';
+import basil from '@/plugins/basil/index.js';
 import qs from 'qs';
 // =============================================
 let request = axios.create({

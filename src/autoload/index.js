@@ -10,7 +10,7 @@
 
 // 自动导入插件（勿动）
 // =====================================================
-let importAll = require.context('@src/autoload', true, /^\.\/(?!index).+\.js$/);
+let importAll = require.context('@/autoload', true, /^\.\/(?!index).+\.js$/);
 importAll.keys().map((path) => {
     importAll(path).default || importAll(path);
 });

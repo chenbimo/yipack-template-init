@@ -7,17 +7,17 @@
 // 核心库
 import Vue from 'vue';
 // 全局路由
-import router from '@src/router/index.js';
+import router from '@/router/index.js';
 // 全局存储
-import vuex from '@src/vuex/index.js';
+import vuex from '@/vuex/index.js';
 // 国际化
-import i18n from '@src/lang/index.js';
+import i18n from '@/lang/index.js';
 // 插件导入
-import '@src/autoload/index.js';
+import '@/autoload/index.js';
 // 全局样式
-import '@src/styles/index.scss';
+import '@/styles/index.scss';
 // 应用模板
-import App from '@src/App.vue';
+import App from '@/App.vue';
 // 实例化
 let vm = new Vue({
     router: router,

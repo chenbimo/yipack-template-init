@@ -15,7 +15,7 @@ VueRouter.prototype.push = function push(location) {
 Vue.use(VueRouter);
 
 let routeList = [];
-let importAll = require.context('@src/pages', true, /route\.js$/);
+let importAll = require.context('@/pages', true, /route\.js$/);
 importAll.keys().map((path) => {
     let router = importAll(path).default || importAll(path);
     routeList.push(router);

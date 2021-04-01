@@ -6,12 +6,12 @@
  */
 import Vue from 'vue';
 import flatten from 'flat';
-import { getNames } from '@src/utils/index.js';
+import { getNames } from '@/utils/index.js';
 // 接口集合
 let apis = {};
 
 // 导入全局接口
-let importAll = require.context('@src/apis', true, /\.js$/);
+let importAll = require.context('@/apis', true, /\.js$/);
 importAll.keys().map((path) => {
     let data = importAll(path).default || importAll(path);
     let route =
@@ -29,7 +29,7 @@ importAll.keys().map((path) => {
 });
 
 // 导入页面方法
-let importApi = require.context('@src/pages', true, /api\.js$/);
+let importApi = require.context('@/pages', true, /api\.js$/);
 importApi.keys().map((path) => {
     let data = importApi(path).default || importApi(path);
     let route = path

@@ -9,7 +9,7 @@ Vue.use(VueI18n);
  * 如有问题或建议，请联系作者：chensuiyi.com
  */
 let messages = {};
-let importAll = require.context('@src/lang', false, /^\.\/(?!index).+\.js$/);
+let importAll = require.context('@/lang', false, /^\.\/(?!index).+\.js$/);
 importAll.keys().map((path) => {
     let lang = __path.basename(path, '.js');
     messages[lang] = importAll(path).default || importAll(path);

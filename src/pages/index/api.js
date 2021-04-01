@@ -1,4 +1,4 @@
-import request from '@src/request/api.js';
+import request from '@/request/api.js';
 export default {
     // 添加
     insert(params) {
