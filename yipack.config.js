@@ -8,7 +8,9 @@ module.exports = {
      * 描述：是否开启手机自适应模式
      * 默认值：false
      */
-    px2viewport: {},
+    px2viewport: {
+        enable: false
+    },
     // 全局模块
     providePlugin: {},
     // 外部模块

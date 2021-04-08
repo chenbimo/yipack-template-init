@@ -11,11 +11,15 @@ export default {
             abc: 456
         };
     },
-    created() {},
+    created() {
+        this.init();
+    },
     mounted() {},
     methods: {
         // 页面初始化操作
-        on_init() {},
+        init() {},
+        // 简单事件中心
+        on() {},
         // 接口-增加
         api_insert() {
             return new Promise((resolve, reject) => {
